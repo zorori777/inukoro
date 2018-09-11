@@ -4,7 +4,7 @@
 
   <script>
     import dogApi from '@/api/dog'
-
+    
     export default {
         async fetch({store}) {
           let json = await dogApi.breeds();
