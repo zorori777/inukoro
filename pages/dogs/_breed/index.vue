@@ -1,8 +1,12 @@
 <template>
-  <section class="container">
-    <div class="column is-multiline">
-    </div>
-  </section>
+    <section class="container">
+        <div class="columns is-multiline">
+          <!-- 追加 -->
+          <div v-for="(item, i) in dog_list" v-bind:key="i" class="column is-1">
+              <img :src="item.url">
+          </div>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -17,4 +21,3 @@
     computed: mapState(['dog_list']),
   }
 </script>
-
