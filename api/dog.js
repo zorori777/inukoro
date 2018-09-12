@@ -18,7 +18,7 @@ class DogApi {
             return json.data.message.map((d) => {
                 return {
                     url: d,
-                    link: 0,
+                    like: 0,
                 };
             });
         })
